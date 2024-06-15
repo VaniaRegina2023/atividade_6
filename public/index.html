@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #333; /* Cinza escuro */
+      color: #000; /* Letras pretas */
+      margin: 0;
+    }
+    .container {
+      text-align: center;
+      background-color: #fff; /* Fundo branco para o container */
+      padding: 20px;
+      border-radius: 8px;
+    }
+    #addTaskForm {
+      margin-bottom: 20px;
+    }
+    #taskList {
+      list-style-type: none;
+      padding: 0;
+    }
+    #taskList li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+      background-color: #f9f9f9; /* Fundo branco para as tarefas */
+      color: #000; /* Letras pretas */
+    }
+    .task-buttons {
+      display: flex;
+      gap: 10px;
+    }
+    button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+    <form id="addTaskForm">
+      <input type="text" id="taskTitle" placeholder="Novas tarefas" required>
+      <button type="submit">Adicionar</button>
+    </form>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="/scripts/main.js"></script>
+</body>
+</html>
